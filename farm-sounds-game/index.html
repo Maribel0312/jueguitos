@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Juego: Sonidos de la granja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Sonidos de la granja 🐄🐔🐷🐑</h1>
+
+    <section class="controls">
+      <button id="play-sound" class="primary">Reproducir onomatopeya</button>
+      <button id="new-quiz">Nuevo (Quiz)</button>
+      <label><input type="checkbox" id="mode-free"> Modo libre (clic para escuchar)</label>
+      <label>Preguntas por sesión:
+        <select id="questions-count">
+          <option value="3">3</option>
+          <option value="5" selected>5</option>
+          <option value="8">8</option>
+        </select>
+      </label>
+      <div class="score">Puntuación: <span id="score">0</span></div>
+      <div class="progress">Restantes: <span id="remaining">-</span></div>
+    </section>
+
+    <section class="animals" id="animals">
+      <!-- animal buttons added by JS -->
+    </section>
+
+    <section class="feedback" id="feedback"></section>
+
+    <footer>
+      <p>Creado con Web Speech API (SpeechSynthesis) — abre en Chrome/Edge/Firefox moderno.</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
